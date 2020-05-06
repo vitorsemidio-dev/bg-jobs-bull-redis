@@ -1,5 +1,3 @@
-import Mail from '../lib/Mail';
-
 class UserController {
   async store(req, res) {
     const { name, email, password } = req.body;
