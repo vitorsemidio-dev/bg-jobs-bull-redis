@@ -11,7 +11,7 @@ class UserController {
     }
 
     // Adicionar job RegistrationMail na fila
-    await Queue.add({ user });
+    await Queue.add('RegistrationMail', { user });
 
     return res.json(user);
   }
