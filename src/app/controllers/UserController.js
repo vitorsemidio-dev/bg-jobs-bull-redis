@@ -1,3 +1,5 @@
+import Queue from '../lib/Queue';
+
 class UserController {
   async store(req, res) {
     const { name, email, password } = req.body;
@@ -9,6 +11,7 @@ class UserController {
     }
 
     // Adicionar job RegistrationMail na fila
+    await Queue.add({ user });
 
     return res.json(user);
   }
