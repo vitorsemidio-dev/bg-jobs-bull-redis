@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Vitor Emidio <vitorsemidio.96@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev:server": "nodemon src/server.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
